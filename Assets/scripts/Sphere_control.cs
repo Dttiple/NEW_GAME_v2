@@ -24,6 +24,22 @@ public class Sphere_control : MonoBehaviour
     
     }
 
-  
+    void OnCollisionEnter(Collision collision)
+    {
+
+
+        if (collision.gameObject.tag == "Wave")
+        {
+            rb.transform.position = CheckPoint.GetActiveCheckPointPosition();
+
+        }
+        if (collision.gameObject.tag == "Saw")
+        {
+            rb.transform.position = CheckPoint.GetActiveCheckPointPosition();
+
+        }
     }
+
+
+}
 
