@@ -5,7 +5,7 @@ using UnityEngine;
 public class Sphere_control : MonoBehaviour
 {
     public float Speed;
-    private Rigidbody rb;
+    public Rigidbody rb;
 
     // Update is called once per frame
 
